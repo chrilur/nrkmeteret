@@ -13,6 +13,3 @@ fiks.nrk <- function(filnavn) {
   write.table(fil, navn, sep=",", row.names=FALSE)
 }
 
-navn <- "data/dkhonett2.csv"
-nett <- read.csv(navn, stringsAsFactors=FALSE)
-uke <- nett[1:7,]
