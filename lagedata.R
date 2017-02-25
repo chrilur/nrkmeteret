@@ -18,9 +18,9 @@ hent.data <- function(x) {
             txt <- gsub("\\)", "", txt)
             return(txt)
             }
-#ukestreng <- read.csv("data/ukestreng.csv", header=FALSE)
-#neste.uke <- ukestreng[nrow(ukestreng),] +1
-#ukestreng <- rbind(ukestreng, neste.uke)
+ukestreng <- read.csv("data/ukestreng.csv", header=FALSE)
+neste.uke <- ukestreng[nrow(ukestreng),] +1
+ukestreng <- rbind(ukestreng, neste.uke)
     
 #Klistre sammen javascript-fil som rommer alle data
     # Unike brukere =1, brukersesjoner = 2, sidevisninger = 3
@@ -38,4 +38,4 @@ hent.data <- function(x) {
 
 #Skriv ut dataene
 write.table(jsfil, 'data/data.js', row.names=FALSE, col.names=FALSE, quote=FALSE)
-#write.table(ukestreng, "data/ukestreng.csv", row.names=FALSE, col.names=FALSE)
+write.table(ukestreng, "data/ukestreng.csv", sep=",", row.names=FALSE, col.names=FALSE, quote=FALSE)

@@ -1,10 +1,11 @@
-setwd("C:/Users/n633164/Documents/R/nrkmeter")
+setwd("C:\\Users\\n633164\\Documents\\R\\nrkmeter\\nrkmeteret")
+
 library(RCurl)
 library(jsonlite)
 
 #Sett uke
 dato <- as.character(Sys.Date())
-uke <- as.integer(format(as.Date(dato), "%W"))
+uke <- as.integer(format(as.Date(dato), "%W"))-1
 
 #Skrap data
 #urlnett <- paste0('http://tnslistene.no/?metric=uv&list_id=1&year=2016&week=',uke)
@@ -77,5 +78,5 @@ for (i in 1:6) {
   fil <- read.csv(filer[i], stringsAsFactors=FALSE)
   filny <- skrap.data(sett[i], refs[i])
   fil <- rbind(fil, filny)
-  write.table(fil, filer[i], row.names=FALSE)
+  write.table(fil, filer[i], sep=",", row.names=FALSE)
 }
