@@ -15,29 +15,28 @@
     var farger = ['#095ec7', '#7697bf', '#e70919', '#e56b74', '#067d09', '#69b36a', '#000000', '#727572'];
     var unike = [btmobil, btnett, bamobil, banett, hamobil, hanett, dkhomobil, dkhonett];
     var sider = [svbtmobil, svbtnett, svbamobil, svbanett, svhamobil, svhanett, svdkhomobil, svdkhonett];
-    
-    
-    $(function() {
-        $('#container').highcharts({
+       
+     $(function() {
+        $('#container2').highcharts({
             chart: {
                 type:'spline'
             },
             title: {text:'NRKmeteret'},
-            subtitle: {text:'Unike brukere'},
-            series: unike,
+            subtitle: {text:'Sidevisninger'},
+            series: sider,
             colors: farger,
             xAxis: xakse,
             yAxis: yakse,
             tooltip: number
         })
-    });
+    }); 
     
 </script>
 </head>
     <body style='margin:20px;padding:0px;'>
    
-    <div id="container" style="height:800px;width:100%;margin:0px;padding:0px;"></div>
-    <button onclick="window.location.href='nrkmetersv.html'">Endre data</button>
+    <div id="container2" style="height:800px;width:100%;margin:0px;padding:0px;"></div>
+    <button onclick="window.location.href='nrkmeter.html'">Endre data</button>
     <p>Laget med <a href="https://www.r-project.org/">R</a>, <a href="https://www.javascript.com/">Javascript</a> og <a href="http://www.highcharts.com">Highcharts</a> av <a href="https://github.com/chrilur/nrkmeteret/">Christian Lura.</a></p>
 </body>
 </html>

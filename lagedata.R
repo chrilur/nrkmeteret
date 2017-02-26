@@ -19,8 +19,8 @@ hent.data <- function(x) {
             return(txt)
             }
 ukestreng <- read.csv("data/ukestreng.csv", header=FALSE)
-neste.uke <- ukestreng[nrow(ukestreng),] +1
-ukestreng <- rbind(ukestreng, neste.uke)
+#neste.uke <- ukestreng[nrow(ukestreng),] +1
+#ukestreng <- rbind(ukestreng, neste.uke)
     
 #Klistre sammen javascript-fil som rommer alle data
     # Unike brukere =1, brukersesjoner = 2, sidevisninger = 3
@@ -33,6 +33,14 @@ ukestreng <- rbind(ukestreng, neste.uke)
             'var banett = { name: ',"'",'BA desktop', "',",' data: [',get.txt(hent.data("banett")[1]),']};\n\n',
             'var hanett = { name: ',"'",'HA desktop', "',",' data: [',get.txt(hent.data("hanett")[1]),']};\n\n',
             'var dkhonett = { name: ',"'",'DKHO desktop', "',",' data: [',get.txt(hent.data("dkhonett")[1]),']};\n\n',
+            'var svbtmobil = { name: ',"'",'BT mobil', "',",' data: [',get.txt(hent.data("btmob")[3]),']};\n\n',
+            'var svbamobil = { name: ',"'",'BA mobil', "',",' data: [',get.txt(hent.data("bamob")[3]),']};\n\n',
+            'var svhamobil = { name: ',"'",'HA mobil', "',",' data: [',get.txt(hent.data("hamob")[3]),']};\n\n',
+            'var svdkhomobil = { name: ',"'",'DKHO mobil', "',",' data: [',get.txt(hent.data("dkhomob")[3]),']};\n\n',
+            'var svbtnett = { name: ',"'",'BT desktop', "',",' data: [',get.txt(hent.data("btnett")[3]),']};\n\n',
+            'var svbanett = { name: ',"'",'BA desktop', "',",' data: [',get.txt(hent.data("banett")[3]),']};\n\n',
+            'var svhanett = { name: ',"'",'HA desktop', "',",' data: [',get.txt(hent.data("hanett")[3]),']};\n\n',
+            'var svdkhonett = { name: ',"'",'DKHO desktop', "',",' data: [',get.txt(hent.data("dkhonett")[3]),']};\n\n',
             'var uker = [',get.txt(ukestreng),'];'
             )
 

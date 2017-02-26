@@ -22,4 +22,22 @@ var xaxisstandard = {style: {
                         color: 'black'},
 				        align: 'center', x: 0, y: 10
 				        };
-var noscroll = {enabled: false}
+var noscroll = {enabled: false};
+
+var yakse = { 
+						min: 10000,
+						startOnTick: false,
+						minPadding: 0,
+						gridLineWidth: 1,
+						<!-- lineWidth: 0, -->
+						title: {
+							text: 'Daglige brukere, ukesnitt',
+							align: 'high'
+						}};
+                            
+var xakse = {
+				        lineWidth: 0, 
+                        labels: xaxisstandard,
+						tickInterval: 5,
+						categories: uker
+					}
