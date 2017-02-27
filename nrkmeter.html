@@ -12,16 +12,9 @@
     
 <script>
     
-    var farger = ['#095ec7', '#7697bf', '#e70919', '#e56b74', '#067d09', '#69b36a', '#000000', '#727572'];
-    var unike = [btmobil, btnett, bamobil, banett, hamobil, hanett, dkhomobil, dkhonett];
-    var sider = [svbtmobil, svbtnett, svbamobil, svbanett, svhamobil, svhanett, svdkhomobil, svdkhonett];
-    
-    
     $(function() {
         $('#container').highcharts({
-            chart: {
-                type:'spline'
-            },
+            chart: {type:'spline'},
             title: {text:'NRKmeteret'},
             subtitle: {text:'Unike brukere'},
             series: unike,
