@@ -41,8 +41,7 @@ var xakse = {
 						tickInterval: 5,
 						categories: uker
 					};
-
-    var farger = ['#095ec7', '#7697bf', '#f40a0f', '#f18285', '#027e1a', '#8fc799', '#9a0491', '#ae93ac'];
-    var unike = [btmobil, btnett, bamobil, banett, hamobil, hanett, dkhomobil, dkhonett];
-    var sider = [svbtmobil, svbtnett, svbamobil, svbanett, svhamobil, svhanett, svdkhomobil, svdkhonett];
+var farger = ['#095ec7', '#7697bf', '#f40a0f', '#f18285', '#027e1a', '#8fc799', '#9a0491', '#ae93ac'];
+var unike = [btmobil, btnett, bamobil, banett, hamobil, hanett, dkhomobil, dkhonett];
+var sider = [svbtmobil, svbtnett, svbamobil, svbanett, svhamobil, svhanett, svdkhomobil, svdkhonett];
     
