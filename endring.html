@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="utf-8" />
+    <title>NRKmeteret</title>
+    <script type="text/javascript" src="https://multimedia.bt.no/krinkelkroken/templates/charts/javascript/jquery-1.8.2.min.js"></script> 
+    <script type="text/javascript" src="data/data.js"></script>
+    <script type="text/javascript" src="data/code.js"></script>
+	<script src="https://code.highcharts.com/highcharts.js"></script>
+    <style type='text/css'>
+ 	</style>
+    
+<script>
+    
+    $(function() {
+        $('#container').highcharts({
+            chart: {type:'column'},
+            title: {text:'NRKmeteret'},
+            subtitle: {text:'Unike brukere'},
+            colors: farger,
+            xAxis: {categories: ['DKHO nett', 'DKHO mobil', 'BT nett', 'BT mobil', 'BA nett', 'BA mobil', 'HA nett', 'HA mobil']
+},
+            yAxis: yakse,
+            tooltip: number
+        })
+    });
+    
+</script>
+</head>
+    <body style='margin:20px;padding:0px;'>
+   
+    <div id="container" style="height:800px;width:100%;margin:0px;padding:0px;"></div>
+    <button onclick="window.location.href='nrkmetersv.html'">Endre data</button>
+    <p>Laget med <a href="https://www.r-project.org/">R</a>, <a href="https://www.javascript.com/">Javascript</a> og <a href="http://www.highcharts.com">Highcharts</a> av <a href="https://github.com/chrilur/nrkmeteret/">Christian Lura.</a></p>
+</body>
+</html>
