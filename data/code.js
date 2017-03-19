@@ -14,7 +14,7 @@ var legende = {align: 'center',
 					};
 var number = {formatter: function() {return '' + this.series.name +'<br>Uke ' + this.x + ': ' + this.y + ' ';}
 					};
-var number2 = {formatter: function() {return '' + this.series.name +'<br>Endring ' + this.x + ': ' + this.y + ' %';}
+var number2 = {formatter: function() {return '' + this.series.name +'<br>' + this.x + ': ' + this.y + ' %';}
 					};
 var percent = {formatter: function() 
                {return ''+this.series.name +'<br>Uke '+ this.x +': '+ this.y +'%';}
@@ -46,4 +46,4 @@ var xakse = {
 var farger = ['#095ec7', '#7697bf', '#f40a0f', '#f18285', '#027e1a', '#8fc799', '#9a0491', '#ae93ac'];
 var unike = [btmobil, btnett, bamobil, banett, hamobil, hanett, dkhomobil, dkhonett];
 var sider = [svbtmobil, svbtnett, svbamobil, svbanett, svhamobil, svhanett, svdkhomobil, svdkhonett];
-    
+var snittnavn = ["DKHO nett", "DKHO mobil", "BT nett", "BT mobil", "BA nett", "BA mobil", "HA nett", "HA mobil"];
