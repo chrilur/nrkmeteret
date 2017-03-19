@@ -14,6 +14,8 @@ var legende = {align: 'center',
 					};
 var number = {formatter: function() {return '' + this.series.name +'<br>Uke ' + this.x + ': ' + this.y + ' ';}
 					};
+var number2 = {formatter: function() {return '' + this.series.name +'<br>Endring ' + this.x + ': ' + this.y + ' %';}
+					};
 var percent = {formatter: function() 
                {return ''+this.series.name +'<br>Uke '+ this.x +': '+ this.y +'%';}
               }	;

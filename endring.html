@@ -3,25 +3,23 @@
 <head>
     <meta charset="utf-8" />
     <title>NRKmeteret</title>
-    <script type="text/javascript" src="https://multimedia.bt.no/krinkelkroken/templates/charts/javascript/jquery-1.8.2.min.js"></script> 
+   <script type="text/javascript" src="https://multimedia.bt.no/krinkelkroken/templates/charts/javascript/jquery-1.8.2.min.js"></script> 
     <script type="text/javascript" src="data/data.js"></script>
     <script type="text/javascript" src="data/code.js"></script>
 	<script src="https://code.highcharts.com/highcharts.js"></script>
     <style type='text/css'>
  	</style>
-    
-<script>
-    
+<script>    
+     
     $(function() {
         $('#container').highcharts({
             chart: {type:'column'},
-            title: {text:'NRKmeteret'},
-            subtitle: {text:'Unike brukere'},
-            colors: farger,
-            xAxis: {categories: ['DKHO nett', 'DKHO mobil', 'BT nett', 'BT mobil', 'BA nett', 'BA mobil', 'HA nett', 'HA mobil']
-},
-            yAxis: yakse,
-            tooltip: number
+            title: {text:'Formkurven'},
+            subtitle: {text:'Siste uke målt mot snittet av ti foregående uker (%)'},
+            series: [snittall],
+            color: 'red',
+            negativeColor: 'red',
+            tooltip: number2
         })
     });
     
