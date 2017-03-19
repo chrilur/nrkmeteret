@@ -11,7 +11,7 @@ finn.snitt <- function(datasett) {
   return(res)
   }
 
-files <- c("btmob", "btnett", "bamob", "banett", "hamob", "hanett", "dkhomob", "dkhonett")
+files <- c("dkhonett", "dkhomob", "btnett", "btmob", "banett", "bamob", "hanett", "hamob")
 
   snittall <- character()
 

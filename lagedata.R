@@ -1,5 +1,8 @@
 #Lager en js-fil med tall fra TNS Gallup
 
+#Resultat målt mot ti siste uker
+source("snittall.R")
+
 #Hente inn data
 hent.data <- function(x) {
     fil <- paste0("data/", x, ".csv")
@@ -41,6 +44,7 @@ ukestreng <- rbind(ukestreng, neste.uke)
             'var svbanett = { name: ',"'",'BA desktop', "',",' data: [',get.txt(hent.data("banett")[3]),']};\n\n',
             'var svhanett = { name: ',"'",'HA desktop', "',",' data: [',get.txt(hent.data("hanett")[3]),']};\n\n',
             'var svdkhonett = { name: ',"'",'DKHO desktop', "',",' data: [',get.txt(hent.data("dkhonett")[3]),']};\n\n',
+            'var snittall = { name: ', "'", 'Endring', "'", ', data: [', snittall, ']};\n\n',
             'var uker = [',get.txt(ukestreng),'];'
             )
 

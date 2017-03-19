@@ -80,3 +80,6 @@ for (i in 1:6) {
   fil <- rbind(fil, filny)
   write.table(fil, filer[i], sep=",", row.names=FALSE)
 }
+
+#Lage data
+source("lagedata.R")
