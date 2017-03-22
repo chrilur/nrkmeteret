@@ -15,8 +15,8 @@
     $(function() {
         $('#container').highcharts({
             chart: {type:'spline'},
-            title: {text:'NRKmeteret'},
-            subtitle: {text:'Unike brukere'},
+            title: {text:'NRKmeteret', style: tittel},
+            subtitle: {text:'Unike brukere', style: undertittel},
             series: unike,
             colors: farger,
             xAxis: xakse,
