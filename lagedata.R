@@ -1,5 +1,7 @@
 #Lager en js-fil med tall fra TNS Gallup
 
+#skraper TNS for data
+#source("skraptns.R")
 #Resultat målt mot ti siste uker
 source("snittall.R")
 
@@ -22,8 +24,8 @@ hent.data <- function(x) {
             return(txt)
             }
 ukestreng <- read.csv("data/ukestreng.csv", header=FALSE)
-#neste.uke <- ukestreng[nrow(ukestreng),] +1
-#ukestreng <- rbind(ukestreng, neste.uke)
+#denne.uke <- as.integer(paste0(2017,uke))
+#ukestreng <- rbind(ukestreng, denne.uke)
     
 #Klistre sammen javascript-fil som rommer alle data
     # Unike brukere =1, brukersesjoner = 2, sidevisninger = 3
