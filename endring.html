@@ -20,6 +20,15 @@
                 style: undertittel
             },
             plotOptions: {
+                column: {
+                    dataLabels: {
+                        enabled: true,
+                        format: "{y}" + " %",
+                        style: {
+                            fontSize: "14px"
+                               }
+                            }
+                        },
                 series: {
                     color: '#5a6ca1',
                     negativeColor: '#b02d46'
