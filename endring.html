@@ -14,8 +14,11 @@
     $(function() {
         $('#container').highcharts({
             chart: {type:'column'},
-            title: {text:'Formkurven'},
-            subtitle: {text:'Siste uke målt mot snittet av ti foregående uker (%)'},
+            title: {text:'Formkurven', style: tittel},
+            subtitle: {
+                text:'Siste uke målt mot snittet av ti foregående uker (%)',
+                style: undertittel
+            },
             plotOptions: {
                 series: {
                     color: '#5a6ca1',

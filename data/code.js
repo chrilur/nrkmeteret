@@ -26,6 +26,16 @@ var xaxisstandard = {style: {
 				        };
 var noscroll = {enabled: false};
 
+var tittel = {
+   fontWeight: 'bold',
+          fontSize: '26px'
+                };
+
+var undertittel = {
+    fontWeight: 'bold',
+    fontSize: '14px'
+                };
+
 var yakse = { 
 						min: 10000,
 						startOnTick: false,
