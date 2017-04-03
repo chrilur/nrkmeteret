@@ -47,7 +47,8 @@ ukestreng <- rbind(ukestreng, denne.uke)
             'var svhanett = { name: ',"'",'HA desktop', "',",' data: [',get.txt(hent.data("hanett")[3]),']};\n\n',
             'var svdkhonett = { name: ',"'",'DKHO desktop', "',",' data: [',get.txt(hent.data("dkhonett")[3]),']};\n\n',
             'var snittall = { name: ', "'", 'Endring', "'", ', data: [', snittall, ']};\n\n',
-            'var uker = [',get.txt(ukestreng),'];'
+            'var uker = [',get.txt(ukestreng),'];\n\n',
+            'var formkurve = [', "'", 'Formkurven - uke ', uke, "'", '];'
             )
 
 #Skriv ut dataene
