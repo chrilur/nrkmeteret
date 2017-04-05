@@ -5,7 +5,7 @@ library(jsonlite)
 
 #Sett uke
 dato <- as.character(Sys.Date())
-#uke <- as.integer(format(as.Date(dato), "%W"))-1
+uke <- as.integer(format(as.Date(dato), "%W"))-1
 
 #Skrap data
 #urlnett <- paste0('http://tnslistene.no/?metric=uv&list_id=1&year=2016&week=',uke)
