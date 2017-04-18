@@ -6,7 +6,7 @@ finn.snitt <- function(datasett) {
   fil <- paste0("data/", datasett, ".csv")
   tall <- read.csv(fil, stringsAsFactors=FALSE)
   siste <- nrow(tall)
-  snitt <- mean(tall[siste-10,1]:tall[siste-1,1])
+  snitt <- mean(tall[(siste-10):(siste-1),1])
   res <- round(100*tall[siste,1]/snitt, digits=1)-100
   return(res)
   }
