@@ -1,6 +1,6 @@
 ##Statistikk for utvikling av unike brukere sammenliknet
 ##med gjennomsnitt for siste ti år.
-setwd("C:\\Users\\n633164\\Documents\\R\\nrkmeter\\nrkmeteret")
+#setwd("C:\\Users\\n633164\\Documents\\R\\nrkmeter\\nrkmeteret")
 
 finn.snitt <- function(datasett) {
   fil <- paste0("data/", datasett, ".csv")

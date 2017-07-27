@@ -1,4 +1,4 @@
-setwd("C:\\Users\\n633164\\Documents\\R\\nrkmeter\\nrkmeteret")
+##setwd("C:\\Users\\n633164\\Documents\\R\\nrkmeter\\nrkmeteret")
 
 library(RCurl)
 library(jsonlite)

@@ -24,8 +24,8 @@ hent.data <- function(x) {
             return(txt)
             }
 ukestreng <- read.csv("data/ukestreng.csv", header=FALSE)
-denne.uke <- as.integer(paste0(2017,uke))
-ukestreng <- rbind(ukestreng, denne.uke)
+#denne.uke <- as.integer(paste0(2017,uke))
+#ukestreng <- rbind(ukestreng, denne.uke)
     
 #Klistre sammen javascript-fil som rommer alle data
     # Unike brukere =1, brukersesjoner = 2, sidevisninger = 3
