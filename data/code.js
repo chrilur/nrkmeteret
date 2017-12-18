@@ -43,7 +43,7 @@ var yakse = {
 						gridLineWidth: 1,
 						<!-- lineWidth: 0, -->
 						title: {
-							text: 'Daglige brukere, ukesnitt',
+							text: 'Daglige unike brukere, ukesnitt',
 							align: 'high'
 						}};
                             
