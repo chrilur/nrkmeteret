@@ -7,15 +7,9 @@ library(jsonlite)
 dato <- as.character(Sys.Date())
 uke <- as.integer(format(as.Date(dato), "%W"))-1
 
-#Skrap data
-#urlnett <- paste0('http://tnslistene.no/?metric=uv&list_id=1&year=2016&week=',uke)
-#urlmob <- paste0('http://tnslistene.no/?metric=uv&list_id=6&year=2016&week=',uke)
-#tnsnett <- getURL(urlnett)
-#tnsmob <- getURL(urlmob)
-
 # Funksjon for å skrape data, ett medium i ett datasett i én uke
 skrap.data <- function(datasett, medium) {
-  url <- paste0('http://tnslistene.no/?metric=uv&list_id=', datasett, '&year=2017&week=',uke)
+  url <- paste0('http://tnslistene.no/?metric=uv&list_id=', datasett, '&year=2018&week=',uke)
   data <- getURL(url)
   data <- rensk.data(data)
   data <- get.week(data, medium)
